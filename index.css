@@ -1,0 +1,300 @@
+body {
+    background-color: #E8F5E9;
+    padding-top: 55px;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1B5E20;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.navegacion {
+    background-color: #1B5E20;
+    border-bottom: 3px solid #FFD700;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 55px;
+}
+
+.navegacion h1 {
+    background-color: #99eb7b;
+    color: #1B5E20;
+    margin: 0;
+    padding: 5px 10px; 
+    font-size: 1.5em;
+    width: auto;
+    border-radius: 4px;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navegacion ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-size: 11pt;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navegacion ul li a:hover {
+    background-color: #FFD700;
+    color: #1B5E20;
+    transform: none;
+}
+
+.titulos_parrafo {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.titulos_parrafo h1 {
+    text-align: left;
+    background-color: #388E3C;
+    color: #FFD700;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6em;
+    padding: 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #FFD700;
+    border-radius: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulos_parrafo p {
+    background-color: #FFFFFF;
+    color: #1B5E20;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    padding: 15px 25px;
+    margin-bottom: 40px;
+    text-align: justify;
+    border-left: 7px solid #FFD700;
+    border-radius: 0;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.titulos_parrafo a {
+    display: inline-block;
+    background-color: #2b792f;
+    color: #ffd900;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1em;
+    border-left: 5px solid #FFD700;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.titulos_parrafo a:hover {
+    background-color: #1B5E20;
+    color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.titulos_parrafo img {
+    width: 99%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    border: 5px solid #007D5A;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulos_parrafo form {
+    background-color: #1B5E20;
+    padding: 15px 25px;
+    border-left: 7px solid #FFD700;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.titulos_parrafo h2{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5em;
+    background-color: #FFD700;
+    padding: 8px 10px;
+    margin-top: 25px;
+    color: #1B5E20;
+}
+
+.titulos_parrafo label {
+    display: block;
+    font-size: 10pt;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.titulos_parrafo input[type="text"],
+.titulos_parrafo input[type="number"],
+.titulos_parrafo textarea,
+.titulos_parrafo select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #1B5E20;
+    font-size: 9pt;
+    box-sizing: border-box;
+}
+
+.titulos_parrafo textarea {
+    resize: vertical;
+}
+
+.titulos_parrafo select {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1B5E20;
+    background-color: #E8F5E9;
+    border: 1px solid #388E3C;
+    padding: 6px;
+    font-size: 9pt;
+}
+
+.titulos_parrafo input[type="submit"] {
+    background-color: #FFD700;
+    color: #1B5E20;
+    border: none;
+    padding: 6px 12px;
+    font-size: 10pt;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: auto;
+    margin-top: 15px;
+}
+
+.titulos_parrafo input[type="submit"]:hover {
+    background-color: #388E3C;
+    color: #FFD700;
+}
+
+.titulos_parrafo input[type="checkbox"] {
+    margin-right: 5px;
+    display: inline;
+    cursor: pointer;
+    accent-color: #FFD700;
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .navegacion {
+        padding: 0 15px;
+        height: 50px;
+    }
+    .navegacion h1 {
+        font-size: 1.4em;
+    }
+    .navegacion ul li a {
+        padding: 15px 12px;
+        font-size: 10pt;
+    }
+    .titulos_parrafo h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    body {
+        padding-top: 110px;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .navegacion h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 8px 0; 
+        font-size: 1.3em;
+        border-radius: 0;
+    }
+    
+    .navegacion ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navegacion ul li {
+        width: 49%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navegacion ul li a {
+        padding: 8px 5px; 
+        font-size: 9pt;
+    }
+    
+    .titulos_parrafo {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .titulos_parrafo h1 {
+        font-size: 1.4em;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+
+    .titulos_parrafo p {
+        font-size: 11pt;
+        padding: 10px 10px;
+        line-height: 1.4;
+    }
+
+    .titulos_parrafo form {
+        padding: 15px;
+    }
+
+    .titulos_parrafo input[type="submit"] {
+        padding: 10px 12px;
+        width: 100%;
+        margin-top: 15px;
+    }
+}

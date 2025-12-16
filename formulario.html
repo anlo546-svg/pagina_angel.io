@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="/favicon.jpg">
+    <title>Nintendex | Encuesta Jugador</title>
+</head>
+
+<body>
+    
+    <nav class="navegacion">
+        <h1>Nintendex</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="titulos_parrafo">
+        <h1>¡Bienvenidos a la Zona de Encuestas!</h1>
+        <p>¡Bienvenido a nuestra Zona de Formularios y Encuestas! Sabemos que cada jugador es un mundo, y esta sección es el lugar donde tu voz se convierte en acción. Utiliza estos formularios para compartir tus gustos, tus opiniones y tus preferencias sobre las sagas de Nintendo.</p>
+    </div>
+    
+    <form action="#" method="POST"> 
+        <div class="titulos_parrafo">
+            <h2>1. Identificación y Experiencia Fundamental</h2>
+
+            <label for="nickname">Nombre/Nickname:</label><br>
+            <input type="text" id="nickname" name="nickname" required><br>
+
+            <label for="saga_favorita">Tu Saga Favorita Absoluta: (Ej. Zelda, Mario, Pokémon, Metroid, etc.)</label><br>
+            <input type="text" id="saga_favorita" name="saga_favorita"><br>
+
+            <label for="juego_mas_disfrutado">Tu Juego Más Disfrutado: (El título de Nintendo al que más horas has dedicado)</label><br>
+            <input type="text" id="juego_mas_disfrutado" name="juego_mas_disfrutado"><br>
+
+            <label for="consola_preferida">Tu Consola Preferida: (La consola de Nintendo que más nostalgia o satisfacción te da)</label><br>
+            <input type="text" id="consola_preferida" name="consola_preferida"><br>
+
+            <label for="estilo_juego">Tu Estilo de Juego Principal: (Ej. Plataformas, RPG, Aventura de Mundo Abierto, Lucha, Simulación)</label><br>
+            <input type="text" id="estilo_juego" name="estilo_juego"><br>
+
+            <h2>2. Estética y Sonido</h2>
+
+            <label for="estilo_arte">Tu Estilo de Arte Preferido: (Ej. Cel-Shading / Pixel Art / Cartoon Moderno)</label><br>
+            <input type="text" id="estilo_arte" name="estilo_arte"><br>
+
+            <label for="mejor_banda_sonora">Tu Mejor Banda Sonora: (La saga o juego con la música más memorable)</label><br>
+            <input type="text" id="mejor_banda_sonora" name="mejor_banda_sonora"><br>
+
+            <label for="mundo_fantasia">Tu Mundo de Fantasía Favorito: (El reino o región de Nintendo que más te gustaría visitar)</label><br>
+            <input type="text" id="mundo_fantasia" name="mundo_fantasia"><br>
+
+            <h2>3. Social y Crítico</h2>
+
+            <label for="mejor_multijugador">Tu Mejor Juego Multijugador *Party*: (El título ideal para jugar con amigos/familia)</label><br>
+            <input type="text" id="mejor_multijugador" name="mejor_multijugador"><br>
+
+            <label for="rol_online">Tu Rol Online: (Competitivo o Cooperativo)</label><br>
+            <input type="text" id="rol_online" name="rol_online"><br>
+
+            <label for="saga_volver">Saga que Debe Volver (Urgente): (Ej. F-Zero, Star Fox, EarthBound, etc.)</label><br>
+            <input type="text" id="saga_volver" name="saga_volver"><br>
+
+            <label for="nota_juego">Nota al Último Gran Juego: (Calificación del 1 al 10)</label><br>
+            <input type="number" id="nota_juego" name="nota_juego" min="1" max="10"><br>
+
+            <h2>4. Visión de Futuro</h2>
+
+            <label for="funcionalidad_proxima_consola">Funcionalidad para la Próxima Consola: (Una característica que esperas ver en la sucesora de Switch)</label><br>
+            <textarea id="funcionalidad_proxima_consola" name="funcionalidad_proxima_consola" rows="3"></textarea><br>
+
+            <label for="crossover_sonado">Tu Crossover Soñado: (Dos sagas de Nintendo que quieres ver juntas)</label><br>
+            <input type="text" id="crossover_sonado" name="crossover_sonado"><br>
+
+            <label for="genero_select">De las sagas mencionadas en la pagina web, ¿Con cual te quedas?</label><br>
+            <select id="genero_select" name="saga_elegida" style="width: 90%; padding: 10px; margin-top: 5px; margin-bottom: 25px; border: 1px solid #00CED1;">
+                <option value="Elige_genero">-- Elige una sagas --</option>
+                <option value="Zelda">Zelda</option>
+                <option value="Metroid">Metroid</option>
+                <option value="DonkeyKong">DonkeyKong</option>
+                <option value="Pokemon">Pokemon</option>
+                <option value="fireemblem">Fireemblem</option>
+                <option value="xenoblade">Xenoblade</option>
+            </select><br>
+
+            <label for="gusto_saga">¿Que te gusta mas de esta saga?</label><br>
+            <textarea id="gusto_saga" name="gusto_saga" rows="3"></textarea><br>
+
+            <label for="anadir_proximos_juegos">¿Que te gustaria que añadieran a proximos juegos?</label><br>
+            <textarea id="anadir_proximos_juegos" name="anadir_proximos_juegos" rows="3"></textarea><br>
+
+            <h2>5. Favoritos (Zelda, Xenoblade, Donkey Kong, Fire Emblem, Mario, Metroid, Pokémon)</h2>
+
+            <label for="juego_favorito_zelda">¿Tu juego favorito de Zelda cual es?</label><br>
+            <select id="juego_favorito_zelda" name="juego_favorito_zelda" style="width: 90%; padding: 10px; margin-top: 5px; margin-bottom: 25px; border: 1px solid #00CED1;">
+                <option value="Elige_juego_zelda">-- Elige un juego de Zelda --</option>
+                <option value="Zelda1">The Legend of Zelda (NES, 1986)</option>
+                <option value="Zelda2">Zelda II: The Adventure of Link (NES, 1987)</option>
+                <option value="Zelda3">The Legend of Zelda: A Link to the Past (SNES, 1991)</option>
+                <option value="Zelda4">The Legend of Zelda: Link's Awakening (Game Boy, 1993)</option>
+                <option value="Zelda5">The Legend of Zelda: Ocarina of Time (N64, 1998)</option>
+                <option value="Zelda6">The Legend of Zelda: Majora's Mask (N64, 2000)</option>
+                <option value="Zelda7">The Legend of Zelda: Oracle of Seasons (GBC, 2001)</option>
+                <option value="Zelda8">The Legend of Zelda: Oracle of Ages (GBC, 2001)</option>
+                <option value="Zelda9">The Legend of Zelda: The Wind Waker (GC, 2002)</option>
+                <option value="Zelda10">The Legend of Zelda: Four Swords Adventures (GC, 2004)</option>
+                <option value="Zelda11">The Legend of Zelda: The Minish Cap (GBA, 2004)</option>
+                <option value="Zelda12">The Legend of Zelda: Twilight Princess (GC/Wii, 2006)</option>
+                <option value="Zelda13">The Legend of Zelda: Phantom Hourglass (DS, 2007)</option>
+                <option value="Zelda14">The Legend of Zelda: Spirit Tracks (DS, 2009)</option>
+                <option value="Zelda15">The Legend of Zelda: Skyward Sword (Wii, 2011)</option>
+                <option value="Zelda16">The Legend of Zelda: A Link Between Worlds (3DS, 2013)</option>
+                <option value="Zelda17">The Legend of Zelda: Tri Force Heroes (3DS, 2015)</option>
+                <option value="Zelda18">The Legend of Zelda: Breath of the Wild (Wii U/Switch, 2017)</option>
+                <option value="Zelda19">The Legend of Zelda: Tears of the Kingdom (Switch, 2023)</option>
+            </select><br>
+
+            <label for="juego_favorito_xenoblade">¿Tu juego favorito de Xenoblade cual es?</label><br>
+            <select id="juego_favorito_xenoblade" name="juego_favorito_xenoblade" style="width: 90%; padding: 10px; margin-top: 5px; margin-bottom: 25px; border: 1px solid #00CED1;">
+                <option value="Elige_juego_xenoblade">-- Elige un juego de Xenoblade --</option>
+                <option value="Xenoblade1">Xenoblade Chronicles (Wii, 2010)</option>
+                <option value="XenobladeX">Xenoblade Chronicles X (Wii U, 2015)</option>
+                <option value="Xenoblade2">Xenoblade Chronicles 2 (Switch, 2017)</option>
+                <option value="XenobladeDE">Xenoblade Chronicles: Definitive Edition (Switch, 2020)</option>
+                <option value="Xenoblade3">Xenoblade Chronicles 3 (Switch, 2022)</option>
+                <option value="Xenoblade2TGC">Xenoblade Chronicles 2: Torna - The Golden Country (DLC/Standalone, 2018)</option>
+                <option value="Xenoblade3FE">Xenoblade Chronicles 3: Future Redeemed (DLC, 2023)</option>
+            </select><br>
+            
+            <label for="juego_favorito_donkeykong">¿Cuál es tu juego favorito de Donkey Kong?</label>
+            <select id="juego_favorito_donkeykong" name="juego_favorito_donkeykong">
+                <option value="Elige_juego_dk">-- Elige un juego de Donkey Kong --</option>
+                <option value="DonkeyKong1981">Donkey Kong (Arcade, 1981)</option>
+                <option value="DonkeyKongJr">Donkey Kong Jr. (Arcade / NES, 1982)</option>
+                <option value="DKCountry1">Donkey Kong Country (SNES, 1994)</option>
+                <option value="DKLand1">Donkey Kong Land (Game Boy, 1995)</option>
+                <option value="DKCountry2">Donkey Kong Country 2: Diddy's Kong Quest (SNES, 1995)</option>
+                <option value="DKLand2">Donkey Kong Land 2 (Game Boy, 1996)</option>
+                <option value="DKCountry3">Donkey Kong Country 3: Dixie Kong's Double Trouble! (SNES, 1996)</option>
+                <option value="DKLand3">Donkey Kong Land III (Game Boy, 1997)</option>
+                <option value="DK64">Donkey Kong 64 (Nintendo 64, 1999)</option>
+                <option value="DKonga">Donkey Konga (Nintendo GameCube, 2003)</option>
+                <option value="DKJungleClimber">DK Jungle Climber (Nintendo DS, 2007)</option>
+                <option value="DKBarrelBlast">Donkey Kong Barrel Blast (Wii, 2007)</option>
+                <option value="DKCR">Donkey Kong Country Returns (Wii, 2010)</option>
+                <option value="DKCR3D">Donkey Kong Country Returns 3D (Nintendo 3DS, 2013)</option>
+                <option value="DKCTF">Donkey Kong Country: Tropical Freeze (Wii U / Switch, 2014)</option>
+                <option value="MvDKTippingStars">Mario vs. Donkey Kong: Tipping Stars (Wii U / 3DS, 2015)</option>
+                <option value="MvDKSwitch">Mario vs. Donkey Kong (Nintendo Switch, 2024)</option>
+                <option value="DKBananza">Donkey Kong Bananza (Nintendo Switch 2, 2025)</option>
+            </select><br>
+
+            <label for="juego_favorito_fireemblem">¿Cuál es tu juego favorito de Fire Emblem?</label>
+            <select id="juego_favorito_fireemblem" name="juego_favorito_fireemblem">
+                <option value="Elige_juego_fe">-- Elige un juego de Fire Emblem --</option>
+                <option value="FE1_1990">Fire Emblem: Shadow Dragon and the Blade of Light (NES, 1990)</option>
+                <option value="FE2_1992">Fire Emblem Gaiden (NES, 1992)</option>
+                <option value="FE3_1994">Fire Emblem: Mystery of the Emblem (SNES, 1994)</option>
+                <option value="FE4_1996">Fire Emblem: Genealogy of the Holy War (SNES, 1996)</option>
+                <option value="FE5_1999">Fire Emblem: Thracia 776 (SNES, 1999)</option>
+                <option value="FE6_2002">Fire Emblem: The Binding Blade (GBA, 2002)</option>
+                <option value="FE7_2003">Fire Emblem: The Blazing Blade (GBA, 2003)</option>
+                <option value="FE8_2004">Fire Emblem: The Sacred Stones (GBA, 2004)</option>
+                <option value="FE9_2005">Fire Emblem: Path of Radiance (GameCube, 2005)</option>
+                <option value="FE13_2012">Fire Emblem Awakening (3DS, 2012)</option>
+                <option value="FE14_2015">Fire Emblem Fates (3DS, 2015)</option>
+                <option value="FE15_2017">Fire Emblem Echoes: Shadows of Valentia (3DS, 2017)</option>
+                <option value="FE16_2019">Fire Emblem: Three Houses (Switch, 2019)</option>
+            </select><br>
+
+            <label for="juego_favorito_mario">¿Cuál es tu juego favorito de Super Mario?</label>
+            <select id="juego_favorito_mario" name="juego_favorito_mario">
+                <option value="Elige_juego_mario">-- Elige un juego de Super Mario --</option>
+                <option value="SMB1_1985">Super Mario Bros. (NES, 1985)</option>
+                <option value="SMB2J_1986">Super Mario Bros. 2 (Japón) / The Lost Levels (Famicom, 1986)</option>
+                <option value="SMB2W_1988">Super Mario Bros. 2 (Occidente) (NES, 1988)</option>
+                <option value="SMB3_1988">Super Mario Bros. 3 (NES, 1988)</option>
+                <option value="SMWorld_1990">Super Mario World (SNES, 1990)</option>
+                <option value="SM64_1996">Super Mario 64 (Nintendo 64, 1996)</option>
+                <option value="SMS_2002">Super Mario Sunshine (GameCube, 2002)</option>
+                <option value="NSMB_2006">New Super Mario Bros. (Nintendo DS, 2006)</option>
+                <option value="SMG_2007">Super Mario Galaxy (Wii, 2007)</option>
+                <option value="NSMBW_2009">New Super Mario Bros. Wii (Wii, 2009)</option>
+                <option value="SMG2_2010">Super Mario Galaxy 2 (Wii, 2010)</option>
+                <option value="SM3DL_2011">Super Mario 3D Land (Nintendo 3DS, 2011)</option>
+                <option value="NSMBU_2012">New Super Mario Bros. U (Wii U, 2012)</option>
+                <option value="SM3DW_2013">Super Mario 3D World (Wii U, 2013)</option>
+                <option value="SMM_2015">Super Mario Maker (Wii U, 2015)</option>
+                <option value="SMO_2017">Super Mario Odyssey (Nintendo Switch, 2017)</option>
+                <option value="SMBW_2023">Super Mario Bros. Wonder (Nintendo Switch, 2023)</option>
+                <option value="SMPJ_2024">Super Mario Party Jamboree (2024)</option>
+            </select><br>
+
+            <label for="juego_favorito_metroid">¿Cuál es tu juego favorito de Metroid?</label>
+            <select id="juego_favorito_metroid" name="juego_favorito_metroid">
+                <option value="Elige_juego_metroid">-- Elige un juego de Metroid --</option>
+                <option value="Metroid1_1986">Metroid (NES, 1986)</option>
+                <option value="Metroid2_1991">Metroid II: Return of Samus (Game Boy, 1991)</option>
+                <option value="SuperMetroid_1994">Super Metroid (SNES, 1994)</option>
+                <option value="MetroidFusion_2002">Metroid Fusion (GBA, 2002)</option>
+                <option value="MetroidPrime1_2002">Metroid Prime (GameCube, 2002)</option>
+                <option value="ZeroMission_2004">Metroid Zero Mission (GBA, 2004)</option>
+                <option value="MetroidPrime2_2004">Metroid Prime 2: Echoes (GameCube, 2004)</option>
+                <option value="PrimeHunters_2006">Metroid Prime Hunters (Nintendo DS, 2006)</option>
+                <option value="Prime3_2007">Metroid Prime 3: Corruption (Wii, 2007)</option>
+                <option value="OtherM_2010">Metroid: Other M (Wii, 2010)</option>
+                <option value="FederationForce_2016">Metroid Prime: Federation Force (3DS, 2016)</option>
+                <option value="SamusReturns_2017">Metroid: Samus Returns (3DS, 2017)</option>
+                <option value="MetroidDread_2021">Metroid Dread (Nintendo Switch, 2021)</option>
+            </select><br>
+
+            <label for="juego_favorito_pokemon">¿Cuál es tu juego favorito de la saga principal de Pokémon?</label>
+            <select id="juego_favorito_pokemon" name="juego_favorito_pokemon">
+                <option value="Elige_juego_pokemon">-- Elige un juego de Pokémon --</option>
+                <option value="Rojo_1996">Pokémon Rojo (Kanto, 1996)</option>
+                <option value="Azul_1996">Pokémon Azul (Kanto, 1996)</option>
+                <option value="Oro_1999">Pokémon Oro (Johto, 1999)</option>
+                <option value="Plata_1999">Pokémon Plata (Johto, 1999)</option>
+                <option value="Rubi_2002">Pokémon Rubí (Hoenn, 2002)</option>
+                <option value="Zafiro_2002">Pokémon Zafiro (Hoenn, 2002)</option>
+                <option value="Diamante_2006">Pokémon Diamante (Sinnoh, 2006)</option>
+                <option value="Perla_2006">Pokémon Perla (Sinnoh, 2006)</option>
+                <option value="Negro_2010">Pokémon Negro (Teselia/Unova, 2010)</option>
+                <option value="X_2013">Pokémon X (Kalos, 2013)</option>
+                <option value="Y_2013">Pokémon Y (Kalos, 2013)</option>
+                <option value="Sol_2016">Pokémon Sol (Alola, 2016)</option>
+                <option value="Luna_2016">Pokémon Luna (Alola, 2016)</option>
+                <option value="Espada_2019">Pokémon Espada (Galar, 2019)</option>
+                <option value="Escudo_2019">Pokémon Escudo (Galar, 2019)</option>
+                <option value="Escarlata_2022">Pokémon Escarlata (Paldea, 2022)</option>
+                <option value="Purpura_2022">Pokémon Púrpura (Paldea, 2022)</option>
+            </select><br>
+
+            <input type="submit" value="Enviar Encuesta">
+        </div>
+    </form>
+</body>
+</html>
